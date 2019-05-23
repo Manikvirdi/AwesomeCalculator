@@ -101,5 +101,53 @@ namespace CalculatorTest
 			//Assert 
 			Assert.AreEqual(expectedResult, actualResult);
 		}
+				[Test]
+		public void GetMultiplication_Input3point0and5point0_Returns15point0()
+		{
+			//Arrange 
+			double number1 = 3;
+			double number2 = 5;
+
+			double expectedResult = number1 * number2;
+			Calc testCalc = new Calc(number1, number2);
+			//Act 
+			double actualResult = testCalc.GetMultiplication();
+
+			//Assert 
+			Assert.AreEqual(expectedResult, actualResult);
+		}
+
+		[Test]
+		public void GetMultiplication_Input100point0and2point0_Returns200point0()
+		{
+			//Arrange 
+			double number1 = 100;
+			double number2 = 2;
+
+			double expectedResult = number1 * number2;
+			Calc testCalc = new Calc(number1, number2);
+			//Act 
+			double actualResult = testCalc.GetMultiplication();
+
+			//Assert 
+			Assert.AreEqual(expectedResult, actualResult);
+		}
+
+		[Test]
+		public void GetMultiplication_Input6point0and6point0_Returns36point7()
+		{
+			//Arrange 
+			double number1 = 6;
+			double number2 = 6;
+
+			double expectedResult = number1 * number2;
+			Calc testCalc = new Calc(number1, number2);
+			//Act 
+			double actualResult = testCalc.GetMultiplication();
+
+			//Assert 
+			Assert.AreEqual(expectedResult, actualResult);
+		}
+
 	}
 }
