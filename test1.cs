@@ -54,5 +54,52 @@ namespace CalculatorTest
 
 			//Assert Assert.AreEqual(expectedResult, actualResult); 
 		}
+			[Test]
+		public void GetDivision_Input10point0and2point0_Returns5point0()
+		{
+			//Arrange 
+			double number1 = 10;
+			double number2 = 2;
+
+			double expectedResult = number1 / number2;
+			Calc testCalc = new Calc(number1, number2);
+			//Act 
+			double actualResult = testCalc.GetDivision();
+
+			//Assert 
+			Assert.AreEqual(expectedResult, actualResult);
+		}
+
+		[Test]
+		public void GetDivision_Input45point0and5point0_Returns9point0()
+		{
+			//Arrange 
+			double number1 = 45;
+			double number2 = 5;
+
+			double expectedResult = number1 / number2;
+			Calc testCalc = new Calc(number1, number2);
+			//Act 
+			double actualResult = testCalc.GetDivision();
+
+			//Assert 
+			Assert.AreEqual(expectedResult, actualResult);
+		}
+
+		[Test]
+		public void GetDivision_Input99point0and3point0_Return33point0()
+		{
+			//Arrange 
+			double number1 = 99;
+			double number2 = 3;
+
+			double expectedResult = number1 / number2;
+			Calc testCalc = new Calc(number1, number2);
+			//Act 
+			double actualResult = testCalc.GetDivision();
+
+			//Assert 
+			Assert.AreEqual(expectedResult, actualResult);
+		}
 	}
 }
